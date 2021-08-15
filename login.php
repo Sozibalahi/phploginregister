@@ -32,42 +32,19 @@
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration Info</h2>
-                    <form method="POST" action="corefile/register_core.php">
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                        </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
+                    <h2 class="title">Login Info</h2>
+                    <form method="POST" action="corefile/login_core.php">
                         <div class="input-group">
                             <input class="input--style-3" type="email" placeholder="Email" name="email">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3" type="password" placeholder="Password" name="password">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="password" placeholder="password" name="password">
-                        </div>
-                        
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Register</button><br><br>
-                            
+                            <button class="btn btn--pill btn--green" type="submit">Login</button><br><br>
                         </div>
                     </form>
-                    <a href="login.php"><button class="btn btn--pill btn--green" type="submit">Login</button></a>
+                    <a href="index.php"><button class="btn btn--pill btn--green" type="submit">Register</button></a>
                 </div>
             </div>
         </div>
