@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 15, 2021 at 04:53 PM
+-- Generation Time: Aug 17, 2021 at 03:14 PM
 -- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.8
+-- PHP Version: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,6 +34,7 @@ CREATE TABLE `users` (
   `gender` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `creationDate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -41,9 +42,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `birthday`, `gender`, `email`, `phone`, `creationDate`) VALUES
-(1, 'farhad hossain sozib', '24/08/2021', 'Male', 'sozibislam99@gmail.com', '01774226088', '2021-08-15 14:46:43'),
-(2, 'farhad hossain sozib', '24/08/2021', 'Male', 'sozibislam99@gmail.com', '01774226088', '2021-08-15 14:51:26');
+INSERT INTO `users` (`id`, `name`, `birthday`, `gender`, `email`, `phone`, `password`, `creationDate`) VALUES
+(1, 'farhad hossain sozib', '24/08/2021', 'Male', 'sozibislam99@gmail.com', '01774226088', '', '2021-08-15 14:46:43'),
+(2, 'farhad hossain sozib', '24/08/2021', 'Male', 'sozibislam99@gmail.com', '01774226088', '', '2021-08-15 14:51:26');
 
 --
 -- Indexes for dumped tables
